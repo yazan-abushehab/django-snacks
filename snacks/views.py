@@ -7,3 +7,7 @@ class HomePageView(TemplateView):
 
 class AboutPageView(TemplateView):
     template_name='about.html'
+
+
+def home(request):
+    return render(request, 'home.html')

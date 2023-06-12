@@ -1,20 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-</head>
-<body>
-    <header>
-        <nav>
-            <a href="{% url 'home' %}">Home</a>
-            <a href="{% url 'about' %}">about</a>
-        </nav>
-    </header>
-    <main>
-        <h1>Welcome to django</h1>
-    </main>
-    <footer></footer>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Welcome to Django</h1>
+    <h>YAZAN</h>
+{% endblock content %}
